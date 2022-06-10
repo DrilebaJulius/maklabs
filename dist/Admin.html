@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <Nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./Signup.html">Signup</a></li>
+            </ul>
+        </Nav>
+    </div>
+    <div class="text-success">
+        <p>ADMINSTRATOR</p>
+    </div>
+    <div class="Admin-box">
+        <div class="container">
+            <form class="my-form">
+                <label for="username">
+                    <input type="text" name="username" placeholder="username">
+                </label>
+                <label for="email">
+                    <input type="text" name="email" id = "" placeholder="email">
+                </label>
+                <label for="password">
+                    <input type="password" name="password" id="" placeholder="password">
+                </label>
+                <input type="submit">
+            </form>
+        </div>
+    
+        <div>
+           
+            <div class="Admin">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae libero excepturi totam ea. Temporibus, optio excepturi? Consectetur incidunt reiciendis provident amet pariatur nam officiis a? Consequatur officia accusantium quae quod.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, minus sequi! Natus iusto sed harum deserunt quae. Dolores, recusandae porro consectetur maiores tenetur, beatae excepturi libero deleniti vero magnam pariatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium dolorem eius dolores nam ipsum debitis odio, nihil perspiciatis quae odit aliquam soluta nostrum placeat itaque sit voluptatum consequuntur minus!</p>
+            </div>
+    
+        </div>
+    </div>
+    <script>
+        
+        const form = document.querySelector('.my-form')
+        
+        form.addEventListener('submit', (event) => {
+            event.preventDefault()
+
+            location.assign('Admin-action.html')
+        })
+
+    </script>
+</body>
+</html>

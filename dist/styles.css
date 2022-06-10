@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: none;
+    inset: footer;
+}
+body{
+    background: rgb(243, 243, 243);
+    color: rgb(61, 61, 61);
+    font-size: large;
+}
+
+Nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: auto;
+    list-style: none;
+    text-decoration:none;
+}
+
+Nav a{
+    text-decoration-color: aqua;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding: 2em;
+    margin: auto;
+    border: 2px solid rgb(112, 111, 111);
+}
+
+input{
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.container .comments {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100vw;
+    margin: auto;
+    background-color: blue;
+}
+
+button {
+    background: green;
+    padding: 0.5em;
+    width:50%;
+    align-self: center;
+    border-radius: 5px;
+    color: whitesmoke;
+    border: none;
+}
+
+.text-success{
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+svg{
+    background-color: rgb(0, 255, 170);
+    padding: 0.5em;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100vw;
+    margin: auto;
+    background-color: green;
+}
+.comments{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    
+}
+.home{
+    justify-content: space-around;
+}
+.how{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px;
+    padding: auto;
+    color: whitesmoke;
+    background-color: green;
+    text-emphasis-color: grey;
+    text-size-adjust: bold;
+    flex-direction: column;
+    width: 50%;
+    padding: 2em;
+    margin: auto;
+}
+
+.About{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px;
+    padding: auto;
+    color: whitesmoke;
+    background-color: green;
+}
+
+ .new-button a{
+   color: whitesmoke;
+   text-decoration: none;
+}
+
+.new-button{
+    width: 50%;
+    text-align: center;
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.box-1 .my-form, .new-button{
+    margin: 10px;
+}
+.Admin{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px;
+    padding: auto;
+    color: whitesmoke;
+    background-color: green;
+    text-emphasis-color: grey;
+    text-size-adjust: bold;
+    flex-direction: column;
+    width: 50%;
+   padding: 2em;
+    margin: auto;
+}
+
+.Admin-box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.Introduction{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px;
+    padding: auto;
+    color: whitesmoke;
+    background-color: green;
+}

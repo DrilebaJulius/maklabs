@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new pc</title>
+    <link rel="stylesheet" href="dist/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="addpc-pc">
+            <h2>Add new PC</h2>
+            <label for="">
+                <p class="label">Name</p>
+                <input type="text" name="name" placeholder="eg latitude E5410">
+            </label>
+            <label for="">
+                <p class="label">Details</p>
+                <textarea name="details" cols="30" rows="10" placeholder="computer details go here"></textarea>
+            </label>
+            <input type="submit" value="add one" class="submit-button">
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('.Addpc-pc')
+        const uri = "http://localhost:5550/computers"
+        const handleAddpc = async (event) => {
+            event.preventDefault()
+            const info = {
+                name: form.name.value,
+                details: form.details.value
+            }
+            await fetch (uri,
+            {
+                method: 'POST',
+                body: JSON.stringify(info),
+                headers: {
+                    'Content-Type': "application/json"
+                }
+            })
+            alert(info.name + "has been added")
+        }
+        form.addEventListener('submit', handleAddpc)
+    </script>
+</body>
+</html>

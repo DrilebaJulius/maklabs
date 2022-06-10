@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <Nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./Signup.html">Signup</a></li>
+                </ul>
+        </Nav>
+    </div>
+    <div class="container">
+        <h2 class="text-success">Welcome, sign up as.....</h2>
+        <form class="former">
+            <label for="username">
+                <input type="text" name="username" placeholder="username">
+            </label>
+            <label for="email">
+                <input type="text" name="email" id = "" placeholder="email">
+            </label>
+            <label for="password">
+                <input type="password" name="password" id="" placeholder="password">
+            </label>
+            <input type="submit">
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('.former')
+        
+        form.addEventListener('submit', (event) => {
+            event.preventDefault()
+
+            location.assign('bookpc.html')
+        })
+
+    </script>
+</body>
+</html>
